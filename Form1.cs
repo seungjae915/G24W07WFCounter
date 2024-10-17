@@ -19,5 +19,12 @@ namespace G24W07WFCounter
             //labelCount.Text = "" + ++Count;
             labelCount.Text = $"{++Count}";
         }
+
+        private void OnSub(object sender, EventArgs e)
+        {
+            if(Count > 0) {
+                labelCount.Text = $"{--Count}";
+            }
+        }
     }
 }

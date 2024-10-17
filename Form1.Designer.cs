@@ -30,6 +30,7 @@
         {
             btnAdd = new Button();
             labelCount = new Label();
+            btnSub = new Button();
             SuspendLayout();
             // 
             // btnAdd
@@ -54,11 +55,22 @@
             labelCount.TextAlign = ContentAlignment.MiddleCenter;
             labelCount.Click += label1_Click;
             // 
+            // btnSub
+            // 
+            btnSub.Location = new Point(219, 373);
+            btnSub.Name = "btnSub";
+            btnSub.Size = new Size(175, 65);
+            btnSub.TabIndex = 2;
+            btnSub.Text = "감소";
+            btnSub.UseVisualStyleBackColor = true;
+            btnSub.Click += OnSub;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(406, 450);
+            Controls.Add(btnSub);
             Controls.Add(labelCount);
             Controls.Add(btnAdd);
             Name = "Form1";
@@ -70,5 +82,6 @@
 
         private Button btnAdd;
         private Label labelCount;
+        private Button btnSub;
     }
 }
